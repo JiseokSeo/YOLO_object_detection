@@ -13,7 +13,6 @@ Original file is located at
 import cv2
 import torch
 from tqdm import tqdm
-import albumentations
 
 def detection(input_video, output_video, model):
     cap = cv2.VideoCapture(input_video)

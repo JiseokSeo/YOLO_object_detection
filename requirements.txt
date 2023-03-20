@@ -1,12 +1,6 @@
 numpy==1.24.2
-opencv-python==4.7.0.72
-tqdm
-os
-glob
-zipfile
-matplotlib
-re
-torch
-albumentations
-yaml
-shutil
+opencv-python==4.6.0.66
+tqdm==4.65.0
+matplotlib==3.7.1
+torch==1.13.1
+albumentations==1.2.1

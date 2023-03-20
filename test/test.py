@@ -1,5 +1,9 @@
 from utils.detection import detection
 import torch
+import sys
+import os
+
+sys.path.append('./utils')
 
 # 설정 파라미터
 model_path = r'models\best.pt'               # 모델 경로
