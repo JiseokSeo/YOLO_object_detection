@@ -2,7 +2,6 @@ import sys
 sys.path.append('./utils')
 import detection
 import torch
-import torchvision
 
 # 설정 파라미터
 model_path = './models/best.pt'                # 모델 경로
