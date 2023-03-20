@@ -4,9 +4,9 @@ import detection
 import torch
 
 # 설정 파라미터
-model_path = './models/best.pt'                # 모델 경로
-input_video = './sample_video_data/sample1.mp4'  # 디텍션을 수행할 비디오 경로
-output_video = './results/sample1_result.mp4'  # 디텍션 결과를 저장할 경로
+model_path = './models/model2.pt'                  # 사용할 모델 경로 지정
+input_video = './sample_video_data/sample4.mp4'  # 디텍션을 수행할 비디오 경로
+output_video = './results/sample4_result.mp4'    # 디텍션 결과를 저장할 경로
 
 # 모델 임포팅
 model = torch.hub.load('ultralytics/yolov5', 'custom', model_path)

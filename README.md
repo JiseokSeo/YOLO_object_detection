@@ -4,7 +4,8 @@
 │  README.md
 │  requirements.txt
 ├─models
-│      best.pt
+│      model1.pt
+|      model2.pt
 ├─results
 |
 ├─sample_video_data
@@ -19,6 +20,8 @@
 ```
 
 - **model** : object detection에 사용될 모델의 가중치 파일(best.pt)가 저장된 디렉토리입니다.  
+model1.pt는 화물차만 학습되었고, 불법/정상차량 구분을 시행하지 않습니다.  
+model2.pt는 화물차와 트럭이 학습되었고, 불법/정상차량 구분을 시행합니다.  
 - **sample_video_data** : object detection의 입력값으로 사용할 샘플 영상 파일들이 저장된 디렉토리입니다.  
 - **result** : object detection의 결과 영상들이 저장된 디렉토리입니다.  
 - **test** : object detection의 예시가 구현되어 있는 코드(test.py)와,  
@@ -35,7 +38,7 @@ import detection
 import torch
 
 # 설정 파라미터
-model_path = './models/best.pt'                # 모델 경로
+model_path = './models/best.pt'                # 사용할 모델 경로를 지정
 input_video = 'sample_video_data\sample1.mp4'  # 디텍션을 수행할 비디오 경로
 output_video = './results/sample1_result.mp4'  # 디텍션 결과를 저장할 경로
 
@@ -47,10 +50,9 @@ import sys
 sys.path.append('./utils')
 import detection
 import torch
-import torchvision
 
 # 설정 파라미터
-model_path = './models/best.pt'                # 모델 경로
+model_path = './models/model1.pt'                # 모델 경로
 input_video = './sample_video_data/sample1.mp4'  # 디텍션을 수행할 비디오 경로
 output_video = './results/sample1_result.mp4'  # 디텍션 결과를 저장할 경로
 
