@@ -5,15 +5,15 @@
 │  requirements.txt
 ├─models
 │      best.pt
+├─results
+│      sample2_result.mp4
+│      sample3_result.mp4
+│      sample4_result.mp4
 ├─sample_video_data
 │      sample1.mp4
 │      sample2.mp4
 │      sample3.mp4
 │      sample4.mp4
-├─results
-│      sample2_result.mp4
-│      sample3_result.mp4
-│      sample4_result.mp4
 ├─test
 │      test.py
 │      train_process.ipynb
