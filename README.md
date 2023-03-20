@@ -32,7 +32,7 @@
   
   
   
-### 다음은 object detection 실행의 예시입니다.
+### 다음은 test.py에서 object detection 실행의 예시입니다.
 ```python
 from utils.detection import detection
 import torch
